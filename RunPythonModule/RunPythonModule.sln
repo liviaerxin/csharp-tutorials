@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TensorFlow", "TensorFlow\TensorFlow.csproj", "{B35036C6-9746-40C2-8EAF-050C6B57298C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic", "Basic\Basic.csproj", "{3D14A8F5-B73B-488B-A709-7418A8A666B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numpy", "Numpy\Numpy.csproj", "{7F50CAD1-2233-49BE-BB02-62590E984E43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B35036C6-9746-40C2-8EAF-050C6B57298C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35036C6-9746-40C2-8EAF-050C6B57298C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35036C6-9746-40C2-8EAF-050C6B57298C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35036C6-9746-40C2-8EAF-050C6B57298C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D14A8F5-B73B-488B-A709-7418A8A666B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D14A8F5-B73B-488B-A709-7418A8A666B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D14A8F5-B73B-488B-A709-7418A8A666B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D14A8F5-B73B-488B-A709-7418A8A666B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F50CAD1-2233-49BE-BB02-62590E984E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F50CAD1-2233-49BE-BB02-62590E984E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F50CAD1-2233-49BE-BB02-62590E984E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F50CAD1-2233-49BE-BB02-62590E984E43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

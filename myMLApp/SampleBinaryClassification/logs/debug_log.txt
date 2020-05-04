@@ -1,0 +1,31 @@
+Inferring Columns ...
+Creating Data loader ...
+Loading data ...
+Exploring multiple ML algorithms and settings to find you the best model for ML task: binary-classification
+For further learning check: https://aka.ms/mlnet-cli
+|     Trainer                              Accuracy      AUC    AUPRC  F1-score  Duration #Iteration             |
+[Source=AutoML, Kind=Trace] Channel started
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=AveragedPerceptronBinary{}  cache=+
+[Source=AutoML, Kind=Trace] 1	0.731231051883868	00:00:03.8494566	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=AveragedPerceptronBinary{}  cache=+
+|1    AveragedPerceptronBinary               0.7083   0.8148   0.8824    0.7586       3.8          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SdcaLogisticRegressionBinary{}  cache=+
+
+===============================================Experiment Results=================================================
+------------------------------------------------------------------------------------------------------------------
+|                                                     Summary                                                    |
+------------------------------------------------------------------------------------------------------------------
+|ML Task: binary-classification                                                                                  |
+|Dataset: wikipedia-detox-250-line-data.tsv                                                                      |
+|Label : Sentiment                                                                                               |
+|Total experiment time : 10.98 Secs                                                                              |
+|Total number of models explored: 1                                                                              |
+------------------------------------------------------------------------------------------------------------------
+|                                              Top 1 models explored                                             |
+------------------------------------------------------------------------------------------------------------------
+|     Trainer                              Accuracy      AUC    AUPRC  F1-score  Duration #Iteration             |
+|1    AveragedPerceptronBinary               0.7083   0.8148   0.8824    0.7586       3.8          1             |
+------------------------------------------------------------------------------------------------------------------
+Generated trained model for consumption: /Users/siyao/Documents/csharp-tutorials/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/MLModel.zip
+Retrieving best pipeline ...
+Generated C# code for model consumption: /Users/siyao/Documents/csharp-tutorials/myMLApp/SampleBinaryClassification/SampleBinaryClassification.ConsoleApp
+Check out log file for more information: /Users/siyao/Documents/csharp-tutorials/myMLApp/SampleBinaryClassification/logs/debug_log.txt
