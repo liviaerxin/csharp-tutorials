@@ -13,11 +13,12 @@ namespace TextClassificationTF
     {
         // <SnippetDeclareGlobalVariables>
         public const int FeatureLength = 600;
-        static readonly string _modelPath = Path.Combine(Environment.CurrentDirectory, "sentiment_model");
+        static readonly string _modelPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sentiment_model");
         // </SnippetDeclareGlobalVariables>
 
         static void Main(string[] args)
         {
+            Console.WriteLine($"modelPath: ${_modelPath}");
             // Create MLContext to be shared across the model creation workflow objects
             // <SnippetCreateMLContext>
             MLContext mlContext = new MLContext();
@@ -123,6 +124,7 @@ namespace TextClassificationTF
             // <SnippetDisplayPredictions>
             Console.WriteLine("Number of classes: {0}", sentimentPrediction.Prediction.Length);
             Console.WriteLine("Is sentiment/review positive? {0}", sentimentPrediction.Prediction[1] > 0.5 ? "Yes." : "No.");
+            Console.WriteLine("Prediction Confidence: {0}", sentimentPrediction.Prediction[1] > 0.5 ? sentimentPrediction.Prediction[1]: sentimentPrediction.Prediction[0]);
             // </SnippetDisplayPredictions>
 
             /////////////////////////////////// Expected output ///////////////////////////////////

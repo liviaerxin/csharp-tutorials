@@ -8,7 +8,7 @@ namespace BasicOperation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"CurrentDirectory: {Environment.CurrentDirectory}");
+            Console.WriteLine($"CurrentDirectory: {AppDomain.CurrentDomain.BaseDirectory}");
 
             using (Py.GIL())
             {
@@ -19,7 +19,7 @@ namespace BasicOperation
                 Console.WriteLine($"python working directory: {os.getcwd()}");
 
                 // Resolve `calculator.py` not found
-                sys.path.insert(0, os.getcwd());
+                sys.path.insert(0, AppDomain.CurrentDomain.BaseDirectory);
 
                 // Import local module in current directory
                 dynamic calculator = Py.Import("calculator");

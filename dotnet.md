@@ -6,6 +6,26 @@
 
 [Java Classloader - how to reference different versions of a jar](https://stackoverflow.com/questions/1553567/java-classloader-how-to-reference-different-versions-of-a-jar)
 
+[Organizing and testing projects with the .NET Core CLI](https://docs.microsoft.com/en-us/dotnet/core/tutorials/testing-with-cli)
+    Project Structure,
+
+    ```sh
+    /NewTypes
+    |__/src
+    |__/NewTypes
+        |__/Pets
+            |__Dog.cs
+            |__Cat.cs
+            |__IPet.cs
+        |__Program.cs
+        |__NewTypes.csproj
+    |__/test
+    |__NewTypesTests
+        |__PetTests.cs
+        |__NewTypesTests.csproj
+    ```
+
+
 ## .Net Core Tools
 
 [.NET Core Uninstall Tool](https://docs.microsoft.com/en-us/dotnet/core/additional-tools/uninstall-tool)

@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcSentimentAnalysis";
+
+package sentiment.analysis;
+
+// PredictionService provides access to machine-learned models loaded by
+// model_servers.
+service SentimentAnalysis {
+  // Predict -- provides access to loaded TensorFlow model.
+  rpc Predict(PredictRequest) returns (PredictResponse) {}
+
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+
+message PredictRequest {
+  string text = 1;
+}
+  
+  
+message PredictResponse {
+  string positive = 1;
+  float confidence = 2;
+  float elapsed_time = 3;
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}

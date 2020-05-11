@@ -10,18 +10,4 @@
     <PackageReference Include="Microsoft.ML.TensorFlow" Version="1.4.0" />
     <PackageReference Include="SciSharp.TensorFlow.Redist" Version="1.15.1" />
   </ItemGroup>
-  <ItemGroup>
-    <None Update="sentiment_model\saved_model.pb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="sentiment_model\imdb_word_index.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="sentiment_model\variables\variables.data-00000-of-00001">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="sentiment_model\variables\variables.index">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
 </Project>

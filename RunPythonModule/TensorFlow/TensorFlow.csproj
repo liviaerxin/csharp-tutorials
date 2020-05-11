@@ -10,4 +10,29 @@
       <HintPath>..\..\pythonnet\src\runtime\bin\netstandard2.0\Python.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\tf\sentiment_analysis\README.md">
+      <Link>sentiment_analysis\README.md</Link>
+    </None>
+    <None Include="..\..\tf\sentiment_analysis\sentiment_model\imdb_word_index.csv">
+      <Link>sentiment_analysis\sentiment_model\imdb_word_index.csv</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\tf\sentiment_analysis\sentiment_model\saved_model.pb">
+      <Link>sentiment_analysis\sentiment_model\saved_model.pb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\tf\sentiment_analysis\sentiment_model\variables\variables.data-00000-of-00001">
+      <Link>sentiment_analysis\sentiment_model\variables\variables.data-00000-of-00001</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\tf\sentiment_analysis\sentiment_model\variables\variables.index">
+      <Link>sentiment_analysis\sentiment_model\variables\variables.index</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\tf\sentiment_analysis\sentiment_analysis.py">
+      <Link>sentiment_analysis\sentiment_analysis.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
